@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Dvd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- some Bootstrap interactions relay on jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+            crossorigin="anonymous"></script>
+            <script src="GiavaFerrandinaFSWD30CodeReview6.js"></script>
+    
+
+  </head>
+  <body style="background-color:lavender">
+    <header style="color: darkgrey;width: 100%;">
+              <div class="row" style="background-color: slategrey">
+                 <div class="col-md-6 col-sm-6 col-xs-12">
+                  <span>
+                      <p style="font-size:40px;text-align: left;padding-left:20px;margin-top:30px">   ...My favourite films</p>
+                    </span>
+                  </div>
+              </div>
+     </header>
+  
+        <div class="container">
+     
+            <nav class="navbar navbar-default">
+              
+                <div class="navbar-header">
+             
+                <ul class="nav navbar-nav">
+                   <li class="active">    
+                       <a href="GiavaFerrandina-FSWD30CodeReview6.html">HOME</a> 
+                     </li>
+                  <li class="active">    
+                       <a href="book.html">BOOK</a>  
+                    </li>  
+                   <li class="active">    
+                      <a href="cd.html">CD</a>  
+                     </li>
+                  <li class="active">    
+                       <a href="dvd.html">DVD</a> 
+                     </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+    
+         <div class="container" style="margin-top:50px">  
+          <div class="row" style="padding-top:60px; padding-bottom: 60px;background-color: silver; padding-right: 50px; padding-left: 15px; box-shadow: 0px 0px 20px 20px grey">
+                <div class="col-md-3 col-sm-6 col-xs-12">   
+                   <table class="table-contanier">
+                      <tr>
+                        <tr>
+                          <td>
+                              <dl class="description">
+                                <img id="imgdvd1" style="height:400px; border:double darkcyan 20px">
+                                <dt id="Descriptiondvd1" style="margin-top:15px"></dt>
+                              </dl> 
+                          </td>  
+                        </tr>
+                    </tr>            
+                  </table>
+               </div>
+
+               <div class="col-md-3 col-sm-6 col-xs-12">   
+                   <table class="table-contanier">
+                      <tr>
+                        <tr>
+                          <td>
+                              <dl class="description">
+                                <img id="imgdvd2" style="height:400px; width: 300px; border:double darkcyan 20px;">
+                                <dt id="Descriptiondvd2" style="margin-top:15px"></dt>
+                              </dl> 
+                          </td>  
+                        </tr>
+                    </tr>            
+                  </table>
+               </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">   
+                   <table class="table-contanier">
+                      <tr>
+                        <tr>
+                          <td>
+                              <dl class="description">
+                                <img id="imgdvd3" style="height:400px; border:double darkcyan 20px;">
+                               <dt id="Descriptiondvd3" style="margin-top:15px; padding-left:5px"></dt>
+                              </dl> 
+                          </td>  
+                        </tr>
+                    </tr>            
+                  </table>
+               </div>
+
+               <div class="col-md-3 col-sm-6 col-xs-12">   
+                   <table class="table-contanier">
+                      <tr>
+                        <tr>
+                          <td>
+                              <dl class="description">
+                                <img id="imgdvd4" style="height:400px; border:double darkcyan 20px;">
+                               <dt id="Descriptiondvd4" style="margin-top:15px; padding-left:5px"></dt>
+                              </dl> 
+                          </td>  
+                        </tr>
+                    </tr>            
+                  </table>
+                </div>
+            </div>
+           <footer style="color:grey; font-size: 15px; text-align: center; padding-top:80px">
+              <p>Giava Ferrandina<br>Copyright &copy 2018. All rights reserved.</p>
+          </footer>
+     
+        <script type="text/javascript">
+       
+        document.getElementById("imgdvd1").src = Dvds[0].Photo;
+        document.getElementById("imgdvd2").src = Dvds[1].Photo;
+        document.getElementById("imgdvd3").src = Dvds[2].Photo;
+        document.getElementById("imgdvd4").src = Dvds[3].Photo;
+       
+
+        document.getElementById("Descriptiondvd1").innerHTML = "<dt>" +  "Title: " + Dvds[0].Title + "</dt><dt>" + "Author:   " +  Dvds[0].Author + "</dt><dt>" + "Genre:   " + Dvds[0].Genre + "</dt>"  + "</dt><dt>" + "Publisher:   " + Dvds[0].Publisher + "</dt>"  + "</dt><dt>" + "Rating:   " + Dvds[0].Rating + "</dt>";
+        document.getElementById("Descriptiondvd2").innerHTML = "<dt>" +  "Title: " + Dvds[1].Title + "</dt><dt>" + "Author:   " + Dvds[1].Author + "</dt><dt>" + "Genre:   " +  Dvds[1].Genre + "</dt>"  + "</dt><dt>" + "Publisher:   " + Dvds[1].Publisher + "</dt>"  + "</dt><dt>" + "Rating:   " + Dvds[1].Rating + "</dt>";
+        document.getElementById("Descriptiondvd3").innerHTML = "<dt>"  +  "Title: " + Dvds[2].Title + "</dt><dt>" + "Author:   " + Dvds[2].Author + "</dt><dt>" + "Genre:   " + Dvds[2].Genre + "</dt>"  + "</dt><dt>" + "Publisher:   " + Dvds[2].Publisher + "</dt>"  + "</dt><dt>" + "Rating:   "  + Dvds[2].Rating + "</dt>";
+        document.getElementById("Descriptiondvd4").innerHTML = "<dt>"  +  "Title: " + Dvds[3].Title + "</dt><dt>" + "Author:   " + Dvds[3].Author + "</dt><dt>" + "Genre:   " + Dvds[3].Genre + "</dt>"  + "</dt><dt>" + "Publisher:   " + Dvds[3].Publisher + "</dt>"  + "</dt><dt>" + "Rating:   "  + Dvds[3].Rating + "</dt>";
+       </script>
+  </body>
+</html>
